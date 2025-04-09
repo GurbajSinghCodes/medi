@@ -51,7 +51,13 @@
     padding-top: 30px;
    }
 }
-@media screen and (max-width:530px) {
-   
-    
+@media screen and (max-width:408px) {
+    .card{
+        height: 180px;
+        width: 130px;
+    }
+.card .image>img{
+    width: 130px;
 }
+}
+
