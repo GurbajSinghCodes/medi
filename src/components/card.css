@@ -1,0 +1,57 @@
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top:10px ;
+}
+.card{
+    margin: 10px;
+    border: 2px solid;
+    height: 250px;
+    width: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px;
+    background-color:ghostwhite;
+    transition: all ease-in-out 0.2s;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.content{
+    padding: 10px;
+}
+.card .itemname{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: papyrus, cursive, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.card .price{
+    font-size: 15px;
+    font-family: mistral,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.card .pack{
+    font-size: 12px;
+    font-family: calibri,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card .info{
+    margin-top: 10px;
+    font-family: Kristen ITC;
+    font-size: 10px;
+}
+
+.card .image>img{
+    width: 180px;
+    border: 1px solid;
+}
+@media screen and (max-width:600px) {
+   .cards{
+    padding-top: 30px;
+   }
+}
+@media screen and (max-width:530px) {
+   
+    
+}

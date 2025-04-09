@@ -1,0 +1,137 @@
+#nav{
+    margin-top: 1px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background: linear-gradient(to right,rgb(154, 196, 232),violet);
+    position: sticky;
+    top:0;
+    
+}
+#navinfo{
+    position: absolute;
+    left: 30px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    justify-content: flex-end;
+}
+.navelement a img{
+    filter: none;
+}
+.navelement{
+    padding: 6px 8px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+.navelement:hover{
+    background-color: rgb(24, 24, 24);
+}
+.navelement:hover a,a img{
+    filter:brightness(0) invert(1);
+    color: white;
+}
+li a{
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+
+}
+li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  li:hover a::after {
+    width: 100%;
+    opacity: 1;
+  }
+#searchbox{
+    display: flex;
+    text-decoration: none;
+    color: unset;
+    background-color: aliceblue;
+    padding: 6px 5px 6px 10px;
+    border-radius: 15px;
+}
+
+ul input{
+    padding-left: 10px;
+    height: 18px;
+    border: 0;
+    font-size: 13px;
+    align-self: center;
+    border: none;
+    outline: none;
+}
+.hamburger{
+    display: none;
+    background-color: unset;
+    border: none;
+}
+#navtop{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:600px) {
+    #nav{
+        padding: 15px;
+    }
+    li a{
+        display: flex;
+        flex-direction: column;
+    }
+    li a img{
+        width: 15px;
+        align-self: center;
+    }
+    #searchbox {
+        width: 160px;
+        height: 25px;
+    }
+    input{
+        width: 120px;
+    }
+}
+@media screen and (max-width:530px) {
+    #nav{
+        flex-direction: column;
+    }
+    #navtop{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #navinfo{
+        position: unset;
+    }
+    .hamburger{
+        display: block;
+    }
+   .nav-links{
+    display: none;
+   }
+    .open{
+        display: flex;
+        flex-direction: column;   
+    }
+    li a{
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+}
